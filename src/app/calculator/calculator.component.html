@@ -1,0 +1,120 @@
+<div class="row justify-content-center">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" name="pantalla" 
+                        id="pantalla" 
+                        class="form-control text-end" 
+                        [(ngModel)]="screen"
+                        readonly>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary">--</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary">--</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <div class="btn btn-outline-primary" (click)="oper('c')">C</div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <div class="btn btn-outline-primary" (click)="oper('d')">/</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary" (click)="numClick('7')">7</button>                            
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary" (click)="numClick('8')">8</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary" (click)="numClick('9')">9</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <div class="btn btn-outline-primary" (click)="oper('m')">x</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary" (click)="numClick('4')">4</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary" (click)="numClick('5')">5</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary" (click)="numClick('6')">6</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <div class="btn btn-outline-primary" (click)="oper('s')">-</div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary" (click)="numClick('1')">1</button>                            </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary" (click)="numClick('2')">2</button>                            </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary" (click)="numClick('3')">3</button>                            </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <div class="btn btn-outline-primary" (click)="oper('a')">+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary">+/-</button>                            
+                    </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary" (click)="numClick('0')">0</button>                            </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary" (click)="numClick('.')">.</button>                            </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary" (click)="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
